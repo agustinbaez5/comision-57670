@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mi primer sitio</title>
+</head>
+<body>
+    <h1>HOLA</h1>
+    <!-- ctrl + k + c (comentario, notas. no se ven en el navegador) -->
+     <!-- etiquetas de contenido
+      etiquetas para titulos o heading tags o los famosos H (son jerarquicos)
+      <h1 (solo puede haber uno en un html, es el titulo principal),h2,h3,h4,h5 y h6> -->
+    <p>que onda guacho</p>
+    <!-- 
+    etiquetas contenedoras (contener o agrupar informacion)
+    etiquetas contenedoras de primer orden (no pueden faltar y no se pueden repetir, con claves para la estructura de la pagina, van siempre adentro del body): 
+    nav (etiqueta de navegacion, barra de navegacion principal de mi sitio web. dentro posee un ul y dentro li y por cada li hay una etiqueta ancla (a))
+    header (etiqueta de encabeza, donde va la barra de navegacion, logo delsitio, titulo, poner redes sociales)
+    main (etiqueta cuerpo, donde escribimos todo nuestro codigo)
+    footer (etiqueta de pie de pagina, solemos poner datos de contacto, redes sociales)
+    aside (puede o no estar, es una etiqueta que lleva informacion que no esta relacionada con el sitio, suele llevar informacion de tipo publicidad)
+
+    etiquetas de segundo orden si pueden anidar otras de segundo orden, y si se pueden repetir
+    section (se usa para separar o determinar secciones de mi sitio, es importante para seo, porque le decimos que la informacion dentro es relevante)
+    article (se usa para referirnos a bloques de codigos que son de caracter informativo, como uan noticia, un bloque de codigo que de informacion de algo, poseen imagenes, titulo y desarrollan texto)
+    div (etiqueta generica, lo unico que hace es agrupar informacion que apra google y para seo no es importante)
+
+    -->
+
+    <!-- listas, manera de agrupar informacion, nos sirve de agrupar informacion de forma ordenada o desordenada, siguen una serie de pasos (ordenada)
+     listas ordenadas:
+     ol (order list)
+     li (se usa por cada elemento de la lista, son etiquetas que refieren a item de lista) 
+     <ol>
+        <li>
+        <li>
+      <ol>
+        lista desordenada:
+        ul (agrupar informacion, por ejemplo lista de compra)
+        <ul>
+            <li>
+            <li>
+        <ul>
+            
+        lista de deficion (sirve para glosarios, indices, diccionarios):
+        dl (definition list)
+        dt (definition title)
+        dd (definition descripcion)
+        <dl>
+            <dt>
+            <dl>
+            <dt>
+            <dl>
+        <dl>-->
+
+    <!-- enlaces. etiquetas anclas, etiquetas anchor o etiqueta a-->
+     <!-- href(referencia a vinculo) aca se pone la url o donde quiero que me envie -->
+      <!-- enlace absoluto me redireccionan a otros sitios web -->
+     <a href="" target="_blank">facebook</a>
+     <!-- enlace relativo para comunicarese con otros archivos dentor de nuestro proyecto -->
+      <!-- enlace interno -->
+       <a href="#iraltop">ir alto top</a>
+       <!-- ID="iraltop" -->
+        <!-- etiqueta muldimedia -->
+         <img src="https://images.unsplash.com/photo-1719216323699-79e62fbc6a56?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+         <!-- videos y audios -->
+          <audio src=""></audio>
+          <video src=""></video>
+          <!-- iframe (me permite extraer partes de otros sitios webs)-->
+
+    <!-- formularios -->
+     <form action="">
+        <!-- <label for=""></label> es la etiqueta que va a recibir el tipo de informacion que se va a captar, ejemplo buscador -->
+         <!-- <input type=" ">  es el elemento donde se va a ingresar informacion-->
+        <label for="buscador">buscador</label>
+        <input type="search" name="buscador" id="buscador">
+        <label for="password">contraseña:</label>
+        <input type="password" name="password" id="password">
+        <label for="dni">dni:</label>
+        <input type="number" name="dni" id="dni" placeholder="ingresa tu dni" required>
+        <div>
+            <label for="L">L</label>
+            <input type="radio" name="talle" id="L">
+            <label for="M">M</label>
+            <input type="radio" name="talle" id="M">
+        </div>
+        <select name="" id="">
+            <option value="">masculino</option>
+            <option value="">femenino</option>
+            <option value="">otro</option>
+        </select>
+        <input type="submit" value="dale chupachichi">
+         </form>
+           
+
+    
+
+    
+</body>
+</html>
