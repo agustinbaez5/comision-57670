@@ -421,78 +421,38 @@ p{
     left: 200px;
 }
 @media (max-width: 768px) {
-    .navbar {
+    header {
+        flex-direction: column;
+    }
+
+    header .logo {
+        margin-bottom: 20px;
+    }
+
+    header nav ul {
         flex-direction: column;
         align-items: center;
     }
 
-    .navbar li {
-        margin: 5px 0;
+    header nav ul li {
+        margin: 10px 0;
     }
 
-    .contacto {
-        flex-direction: column;
+    .container-disciplinas div {
+        flex: 1 1 45%;
     }
 
-    .box-contacto {
-        width: 90%;
-        max-width: none;
-    }
-
-    .caja-contacto input,
-    .caja-contacto textarea {
-        width: 100%;
-    }
-
-    .container-disciplinas {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, auto);
-        max-width: 100%;
-    }
-
-    .tienda {
-        flex-direction: column;
-        padding: 20px;
-    }
-
-    .container-accesorios {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .tienda-atributos {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    }
-
-    .footer {
-        padding: 10px;
-    }
-
-    .caja-footer {
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    .footer-element1, .footer-element2, .footer-element3 {
+        flex: 1 1 45%;
     }
 }
 
 @media (max-width: 480px) {
-    .logo img {
-        width: 40px;
+    .container-disciplinas div {
+        flex: 1 1 100%;
     }
 
-    .logo p {
-        font-size: 0.9rem;
-    }
-
-    .content {
-        flex-direction: column;
-        padding: 10px;
-    }
-
-    .container-club, .video-club, .botonTienda {
-        padding: 10px;
-        margin: 10px;
-    }
-
-    .slider-frame {
-        max-width: 100%;
+    .footer-element1, .footer-element2, .footer-element3 {
+        flex: 1 1 100%;
     }
 }
