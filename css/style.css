@@ -21,8 +21,10 @@ p{
     width: 100%;
     position: sticky;
     top: 0;
+    color: white !
     
 }
+
 .logo{
     display: flex;
     justify-content: center;
@@ -38,17 +40,16 @@ p{
     color: white;
     
 }
-.navbar{
+.navbarr{
     list-style: none;
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    
-    
-   
 }
 
-.navbar li a{
+.navbarr li a{
     display: flex;
+    display: row;
     text-decoration: none;
     color: white;
     padding: 10px;
@@ -421,33 +422,21 @@ p{
     left: 200px;
 }
 @media (max-width: 768px) {
-    header {
-        flex-direction: column;
-    }
-
-    header .logo {
-        margin-bottom: 20px;
-    }
-
-    header nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    header nav ul li {
-        margin: 10px 0;
-    }
-
-    .container-disciplinas div {
-        flex: 1 1 45%;
-    }
-
-    .footer-element1, .footer-element2, .footer-element3 {
-        flex: 1 1 45%;
-    }
+   .contacto{
+    display: flex;
+    flex-direction: column;
+   }
+   .box-contacto{
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+   }
+   .box-contacto img{
+    width: 100%;
+   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 390px) {
     .container-disciplinas div {
         flex: 1 1 100%;
     }
@@ -455,4 +444,19 @@ p{
     .footer-element1, .footer-element2, .footer-element3 {
         flex: 1 1 100%;
     }
+    .box-contacto img{
+        width: 100px;
+       }
+       .contacto{
+        display: flex;
+        flex-direction: column;
+       }
+       .box-contacto{
+        width: 90%;
+        padding: 10px;
+        margin-bottom: 10px;
+       }
+       .box-contacto img{
+        width: 6.25rem;
+       }
 }
