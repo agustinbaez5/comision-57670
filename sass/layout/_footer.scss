@@ -1,0 +1,52 @@
+.footer{
+    background-image: url(../assets/FOOTER.svg);
+    width: 100%;
+    
+    background-size: cover;
+}
+.caja-footer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    padding: 10px;
+    margin: 15px;
+    width: auto;
+    img {
+        height: 100px;
+    }
+}
+.footer-element1{
+    grid-column: 1;
+    grid-row: 1/2;
+
+}
+.footer-element1 p{
+    gap: 1.25rem
+}
+
+.footer-element2{
+    grid-column: 2;
+    grid-row: 1/2;
+}
+
+.footer-element3{
+    grid-column: 3;
+    grid-row: 1/2;
+    
+}
+
+    
+
+.startcoding{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    p{
+        color: white;
+        text-align: center; 
+    }
+    
+    
+    
+}
+

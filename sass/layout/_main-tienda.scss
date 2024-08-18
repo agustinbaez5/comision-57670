@@ -1,0 +1,41 @@
+.tienda{
+    display: flex;
+    padding: 100px;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: 10px;
+}
+.container-accesorios{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1.25rem
+}
+
+.tienda-atributos{
+    height: 600px;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    
+}
+.elemento-atributos1{
+    grid-column: 1/3;
+    grid-row: 1;
+    text-align: center;
+}
+
+.elemento-atributos2{
+    grid-column: 3/5;
+    grid-row: 1;
+    text-align: center;
+}
+
+.elemento-atributos3{
+    grid-column: 2/4;
+    grid-row: 2;
+    text-align: center;
+}
