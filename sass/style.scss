@@ -1,8 +1,9 @@
 /* primero se llama siempre las utilities */
-
+@import "./utilities/variables";
+@import "./utilities/mixins";
 /* segundo la base */
 @import "./base/reset";
-// tercero layout //
+/* tercero layout */
 @import "./layout/header";
 @import "./layout/main-index";
 @import "./layout/main-contacto";
