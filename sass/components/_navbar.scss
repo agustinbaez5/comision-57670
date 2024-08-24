@@ -10,4 +10,10 @@
         color: white;
     } 
 }
-
+.centro{
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}

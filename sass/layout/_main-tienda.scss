@@ -11,7 +11,22 @@
     width: 100%;
     flex-direction: row;
     flex-wrap: nowrap;
-    gap: 1.25rem
+    justify-content: space-around;
+    align-items: center;
+    gap: 3.125rem;
+    button {
+        
+        margin-top: 1rem; /* Espacio superior entre el título y el botón */
+        padding: 0.5rem 1rem; /* Espaciado interno del botón */
+        background-color: #007bff; /* Color de fondo del botón */
+        color: white; /* Color del texto del botón */
+        border: none; /* Elimina el borde por defecto del botón */
+        border-radius: 4px; /* Esquinas redondeadas del botón */
+        cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+        font-size: 16px; /* Tamaño del texto del botón */
+        z-index: 2; /* Asegura que el botón esté por encima del overlay */
+    }
+    
 }
 
 .tienda-atributos{

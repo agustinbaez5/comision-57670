@@ -11,7 +11,22 @@
         color: $color1;
     }
 }
+.presentacion{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+}
+.presentacion-imagen{
+	img{
+		width: 500px;
+	}
+	img:hover{
+		transform: rotate(30deg);
+		transition: transform 2s ease-in;
 
+	}
+}
 .container-noticias {
     display: flex;
     flex-wrap: wrap;
