@@ -4,6 +4,8 @@
 /* segundo la base */
 @import "./base/reset";
 /* tercero layout */
+@import "./layout/media/media320";
+@import "./layout/media/media744";
 @import "./layout/header";
 @import "./layout/main-index";
 @import "./layout/main-contacto";
