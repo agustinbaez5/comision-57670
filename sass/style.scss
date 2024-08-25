@@ -1,0 +1,19 @@
+/* primero se llama siempre las utilities */
+@import "./utilities/variables";
+@import "./utilities/mixins";
+/* segundo la base */
+@import "./base/reset";
+/* tercero layout */
+@import "./layout/media/media320";
+@import "./layout/media/media744";
+@import "./layout/header";
+@import "./layout/main-index";
+@import "./layout/main-contacto";
+@import "./layout/main-elclub";
+@import "./layout/main-disciplinas";
+@import "./layout/main-tienda";
+@import "./layout/footer";
+/* cuarto los componentes */
+@import "./components/navbar";
+@import "./components/button";
+/* y ultimo las media si estamos en desktop a mobile decreciente, y viceversa creciente */

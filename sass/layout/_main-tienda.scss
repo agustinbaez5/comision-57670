@@ -1,0 +1,164 @@
+.responsive-tienda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    img {
+        width: 100%;  // La imagen ocupará el 100% del ancho de su contenedor
+        height: auto; // Mantiene la proporción de la imagen
+    }
+
+    .botonTienda{
+        padding: 5px 10px ;
+        /* border-width: 10px; tamaño del borde */
+        /* border-style: solid; estilo del borde */
+        /* border-color: black; color del borde */
+        border-color: white;
+        border-radius: 10px;
+        background-color: red;
+        color: white;
+        position: absolute;
+        top: 580px;
+        left: 200px;
+    }
+}
+
+.tienda{
+    display: flex;
+    padding: 100px;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: 10px;
+}
+.container-accesorios{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3.125rem;
+    button {
+        
+        margin-top: 1rem; /* Espacio superior entre el título y el botón */
+        padding: 0.5rem 1rem; /* Espaciado interno del botón */
+        background-color: #007bff; /* Color de fondo del botón */
+        color: white; /* Color del texto del botón */
+        border: none; /* Elimina el borde por defecto del botón */
+        border-radius: 4px; /* Esquinas redondeadas del botón */
+        cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+        font-size: 16px; /* Tamaño del texto del botón */
+        z-index: 2; /* Asegura que el botón esté por encima del overlay */
+    }
+    
+}
+
+.tienda-atributos{
+    height: 600px;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    
+}
+.elemento-atributos1{
+    grid-column: 1/3;
+    grid-row: 1;
+    text-align: center;
+}
+
+.elemento-atributos2{
+    grid-column: 3/5;
+    grid-row: 1;
+    text-align: center;
+}
+
+.elemento-atributos3{
+    grid-column: 2/4;
+    grid-row: 2;
+    text-align: center;
+}
+
+@media (max-width: 744px){
+    .responsive-tienda {
+        img {
+            width: 100%; // La imagen ocupará el 80% del contenedor
+        }
+
+        .botonTienda {
+            font-size: 0.9rem;
+            padding: 8px 16px;
+            top: 580px;
+            left: 200px;
+        }
+        .botonTienda{
+            padding: 5px 10px ;
+            /* border-width: 10px; tamaño del borde */
+            /* border-style: solid; estilo del borde */
+            /* border-color: black; color del borde */
+            border-color: white;
+            border-radius: 10px;
+            background-color: red;
+            color: white;
+            position: absolute;
+            top: 375px;
+            left: 50px;
+        }
+    }
+    
+    .tienda{
+        display: flex;
+        max-width: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .container-accesorios{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        gap: 3.125rem;
+        img{
+            max-width: auto;
+            max-height: 100%;
+        }
+        button {
+            
+            margin-top: 1rem; /* Espacio superior entre el título y el botón */
+            padding: 0.5rem 1rem; /* Espaciado interno del botón */
+            background-color: #007bff; /* Color de fondo del botón */
+            color: white; /* Color del texto del botón */
+            border: none; /* Elimina el borde por defecto del botón */
+            border-radius: 4px; /* Esquinas redondeadas del botón */
+            cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+            font-size: 16px; /* Tamaño del texto del botón */
+            z-index: 2; /* Asegura que el botón esté por encima del overlay */
+        }
+        
+    }
+    .elemento-atributos1{
+        grid-column: 1/3;
+        grid-row: 1;
+        text-align: center;
+    }
+    
+    .elemento-atributos2{
+        grid-column: 3/5;
+        grid-row: 1;
+        text-align: center;
+    }
+    
+    .elemento-atributos3{
+        grid-column: 2/4;
+        grid-row: 2;
+        text-align: center;
+    }
+}

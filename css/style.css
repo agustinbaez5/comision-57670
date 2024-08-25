@@ -1,0 +1,823 @@
+<<<<<<< HEAD
+=======
+@charset "UTF-8";
+/* primero se llama siempre las utilities */
+/* manera estatica 
+@mixin flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+} */
+/* manera dinamica */
+/* segundo la base */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* font-family: "Roboto", sans-serif; */
+h1, h2, h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold; }
+
+p {
+  font-family: "Roboto", sans-serif;
+  color: black; }
+
+/* tercero layout */
+@media (max-width: 320px) {
+  .box-contacto {
+    display: flex;
+    flex-direction: column;
+    background-color: #1e2e2e;
+    border: 1px solid black;
+    width: 40%;
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px grey;
+    color: white;
+    width: auto; }
+  .boxcontacto {
+    width: auto; }
+    .boxcontacto img {
+      width: 500px; }
+  .caja-contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 50px;
+    width: auto; }
+    .caja-contacto input .caja-contacto textarea {
+      width: auto;
+      border: 1px solid #c7c7c7;
+      border-radius: 0px 0px 8px; }
+  .contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px; } }
+
+@media (max-width: 744px) {
+  .box-contacto {
+    width: 80%; }
+  .boxcontacto img {
+    width: 100%; }
+  .caja-contacto {
+    margin: 20px; }
+  .contacto {
+    flex-direction: column;
+    align-items: center; } }
+
+.fondonav {
+  background-color: black;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  color: white; }
+
+.informacionPrincipal {
+  background-image: url("../../assets/photo-1618022325802-7e5e732d97a1.jfif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px;
+  margin: 0; }
+  .informacionPrincipal h2 {
+    color: white; }
+  .informacionPrincipal p {
+    color: white; }
+
+.presentacion {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around; }
+
+.presentacion-imagen img {
+  width: 500px; }
+
+.presentacion-imagen img:hover {
+  transform: rotate(30deg);
+  transition: transform 2s ease-in; }
+
+.container-noticias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  /* Espacio entre los artículos */
+  justify-content: center;
+  /* Centra los artículos horizontalmente */ }
+
+.noticias {
+  flex: 1 1 calc(33.333% - 20px);
+  box-sizing: border-box;
+  max-width: calc(33.333% - 20px);
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; }
+  .noticias img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd; }
+  .noticias h3 {
+    margin: 10px 0; }
+  .noticias button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem; }
+    .noticias button:hover {
+      background-color: #0056b3; }
+
+.container-seguinos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: space-around; }
+  .container-seguinos li {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    min-width: 100px;
+    max-width: 200px; }
+  .container-seguinos img {
+    max-width: 100%;
+    height: auto; }
+  .container-seguinos h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    text-align: center; }
+
+@media (max-width: 320px) {
+  .noticias {
+    flex: 1 1 100%;
+    max-width: 100%;
+    padding: 5px; }
+  button {
+    font-size: 0.8rem;
+    padding: 6px 12px; }
+  .presentacion {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around; }
+  .presentacion-imagen img {
+    max-width: 100%; }
+  .presentacion-imagen img:hover {
+    transform: rotate(30deg);
+    transition: transform 2s ease-in; }
+  .video-club {
+    display: flex;
+    justify-content: center;
+    width: 200px; } }
+
+@media (max-width: 744px) {
+  .noticias {
+    flex: 1 1 100%;
+    max-width: 100%;
+    padding: 5px; }
+  button {
+    font-size: 0.8rem;
+    padding: 6px 12px; }
+  .presentacion {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around; }
+  .presentacion-imagen img {
+    max-width: 50%;
+    text-align: center; }
+  .presentacion-imagen img:hover {
+    transform: rotate(30deg);
+    transition: transform 2s ease-in; }
+  .video-club {
+    display: flex;
+    justify-content: center;
+    width: 200px; } }
+
+.box-contacto {
+  display: flex;
+  flex-direction: column;
+  background-color: #1e2e2e;
+  border: 1px solid black;
+  width: 40%;
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px grey;
+  color: white;
+  width: auto; }
+
+.boxcontacto {
+  width: auto; }
+  .boxcontacto img {
+    width: 500px; }
+
+.caja-contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 50px;
+  width: auto; }
+  .caja-contacto input .caja-contacto textarea {
+    width: auto;
+    border: 1px solid #c7c7c7;
+    border-radius: 0px 0px 8px; }
+
+.contacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 30px; }
+
+@media (max-width: 744px) {
+  .box-contacto {
+    display: flex;
+    flex-direction: column;
+    background-color: #1e2e2e;
+    border: 1px solid black;
+    width: 40%;
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px grey;
+    color: white;
+    width: auto;
+    gap: .625rem; }
+  .boxcontacto {
+    width: auto; }
+    .boxcontacto img {
+      max-width: 100%; }
+  .caja-contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 50px;
+    width: auto; }
+    .caja-contacto input .caja-contacto textarea {
+      width: auto;
+      border: 1px solid #c7c7c7;
+      border-radius: 0px 0px 8px; }
+  .contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 30px; } }
+
+@media (max-width: 320px) {
+  .box-contacto {
+    display: flex;
+    flex-direction: column;
+    background-color: #1e2e2e;
+    border: 1px solid black;
+    width: 40%;
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px grey;
+    color: white;
+    width: auto;
+    gap: .625rem; }
+  .boxcontacto {
+    width: auto; }
+    .boxcontacto img {
+      max-width: 100%; }
+  .caja-contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 50px;
+    width: auto; }
+    .caja-contacto input .caja-contacto textarea {
+      width: auto;
+      border: 1px solid #c7c7c7;
+      border-radius: 0px 0px 8px; }
+  .contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 30px; } }
+
+.container-club {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 80%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9; }
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+  border-radius: 8px; }
+  .content img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px; }
+  .content p {
+    flex: 1;
+    font-size: 1rem;
+    line-height: 1.5; }
+
+.video-club {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto; }
+
+.slider-titulo {
+  text-align: center; }
+
+.slider-frame {
+  width: 1280px;
+  height: auto;
+  margin: 50px auto 0;
+  overflow: hidden; }
+  .slider-frame ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 15s infinite alternate ease-in-out; }
+  .slider-frame li {
+    width: 100%;
+    list-style: none; }
+  .slider-frame img {
+    width: 70%; }
+
+.slider-frame {
+  width: 1280px;
+  height: auto;
+  margin: 50px auto 0;
+  overflow: hidden; }
+
+.slider-frame ul {
+  display: flex;
+  padding: 0;
+  width: 400%;
+  animation: slide 15s infinite alternate ease-in-out; }
+
+.slider-frame li {
+  width: 100%;
+  list-style: none; }
+
+.slider-frame img {
+  width: 70%; }
+
+@keyframes slide {
+  0% {
+    margin-left: 0; }
+  20% {
+    margin-left: 0; }
+  25% {
+    margin-left: -100%; }
+  45% {
+    margin-left: -100%; }
+  50% {
+    margin-left: -200%; }
+  70% {
+    margin-left: -200%; }
+  75% {
+    margin-left: -300%; }
+  100% {
+    margin-left: -300%; } }
+
+.container-disciplinas {
+  margin: 50px auto;
+  width: 90%;
+  height: 600px;
+  max-width: 500px;
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr); }
+
+.disciplinas-1 {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  width: 100%;
+  /* Asegúrate de que el contenedor tenga un ancho adecuado */
+  height: 300px;
+  /* Define una altura adecuada para el contenedor, ajústalo según sea necesario */
+  overflow: hidden;
+  /* Asegura que la imagen no se desborde del contenedor */ }
+  .disciplinas-1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* La imagen cubre todo el contenedor */
+    display: block;
+    /* Elimina el espacio debajo de la imagen */ }
+  .disciplinas-1 h2 {
+    background-color: black;
+    top: 10px;
+    /* Ajusta según sea necesario */
+    left: 10px;
+    /* Ajusta según sea necesario */
+    color: white;
+    /* Color del texto para contraste sobre la imagen */
+    margin: 0;
+    /* Elimina el margen por defecto del h2 */
+    font-size: 24px;
+    /* Tamaño del texto, ajústalo según sea necesario */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    /* Sombra del texto */
+    z-index: 1;
+    /* Asegura que el título esté por encima de la imagen */
+    text-align: center; }
+
+.disciplinas-2 {
+  grid-column: 2;
+  grid-row: 1;
+  width: 100%;
+  /* Asegúrate de que el contenedor tenga un ancho adecuado */
+  overflow: hidden;
+  /* Asegura que la imagen no se desborde del contenedor */ }
+  .disciplinas-2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* La imagen cubre todo el contenedor */ }
+  .disciplinas-2 h2 {
+    background-color: black;
+    top: 10px;
+    /* Ajusta según sea necesario */
+    left: 10px;
+    /* Ajusta según sea necesario */
+    color: white;
+    /* Color del texto para contraste sobre la imagen */
+    margin: 0;
+    /* Elimina el margen por defecto del h2 */
+    font-size: 24px;
+    /* Tamaño del texto, ajústalo según sea necesario */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    /* Sombra del texto */
+    z-index: 1;
+    /* Asegura que el título esté por encima de la imagen */
+    text-align: center; }
+
+.disciplinas-3 {
+  grid-column: 2;
+  grid-row: 2;
+  width: 100%;
+  /* Asegúrate de que el contenedor tenga un ancho adecuado */
+  overflow: hidden;
+  /* Asegura que la imagen no se desborde del contenedor */ }
+  .disciplinas-3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* La imagen cubre todo el contenedor */ }
+  .disciplinas-3 h2 {
+    background-color: black;
+    top: 10px;
+    /* Ajusta según sea necesario */
+    left: 10px;
+    /* Ajusta según sea necesario */
+    color: white;
+    /* Color del texto para contraste sobre la imagen */
+    margin: 0;
+    /* Elimina el margen por defecto del h2 */
+    font-size: 24px;
+    /* Tamaño del texto, ajústalo según sea necesario */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    /* Sombra del texto */
+    z-index: 1;
+    /* Asegura que el título esté por encima de la imagen */
+    text-align: center; }
+
+.disciplinas-4 {
+  background-color: #8634b6;
+  grid-column: 2;
+  grid-row: 3/5;
+  width: 100%;
+  /* Asegúrate de que el contenedor tenga un ancho adecuado */
+  overflow: hidden;
+  /* Asegura que la imagen no se desborde del contenedor */ }
+  .disciplinas-4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* La imagen cubre todo el contenedor */ }
+  .disciplinas-4 h2 {
+    background-color: black;
+    top: 10px;
+    /* Ajusta según sea necesario */
+    left: 10px;
+    /* Ajusta según sea necesario */
+    color: white;
+    /* Color del texto para contraste sobre la imagen */
+    margin: 0;
+    /* Elimina el margen por defecto del h2 */
+    font-size: 24px;
+    /* Tamaño del texto, ajústalo según sea necesario */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    /* Sombra del texto */
+    z-index: 1;
+    /* Asegura que el título esté por encima de la imagen */
+    text-align: center; }
+
+.disciplinas-5 {
+  background-color: #40cccc;
+  grid-column: 1;
+  grid-row: 3;
+  width: 100%;
+  /* Asegúrate de que el contenedor tenga un ancho adecuado */
+  overflow: hidden;
+  /* Asegura que la imagen no se desborde del contenedor */ }
+  .disciplinas-5 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* La imagen cubre todo el contenedor */ }
+  .disciplinas-5 h2 {
+    background-color: black;
+    top: 10px;
+    /* Ajusta según sea necesario */
+    left: 10px;
+    /* Ajusta según sea necesario */
+    color: white;
+    /* Color del texto para contraste sobre la imagen */
+    margin: 0;
+    /* Elimina el margen por defecto del h2 */
+    font-size: 24px;
+    /* Tamaño del texto, ajústalo según sea necesario */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    /* Sombra del texto */
+    z-index: 1;
+    /* Asegura que el título esté por encima de la imagen */
+    text-align: center; }
+
+.disciplinas-6 {
+  background-color: #b1347d;
+  grid-column: 1;
+  grid-row: 4;
+  width: 100%;
+  /* Asegúrate de que el contenedor tenga un ancho adecuado */
+  overflow: hidden;
+  /* Asegura que la imagen no se desborde del contenedor */ }
+  .disciplinas-6 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* La imagen cubre todo el contenedor */ }
+  .disciplinas-6 h2 {
+    background-color: black;
+    top: 10px;
+    /* Ajusta según sea necesario */
+    left: 10px;
+    /* Ajusta según sea necesario */
+    color: white;
+    /* Color del texto para contraste sobre la imagen */
+    margin: 0;
+    /* Elimina el margen por defecto del h2 */
+    font-size: 24px;
+    /* Tamaño del texto, ajústalo según sea necesario */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    /* Sombra del texto */
+    z-index: 1;
+    /* Asegura que el título esté por encima de la imagen */
+    text-align: center; }
+
+.responsive-tienda {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; }
+  .responsive-tienda img {
+    width: 100%;
+    height: auto; }
+  .responsive-tienda .botonTienda {
+    padding: 5px 10px;
+    /* border-width: 10px; tamaño del borde */
+    /* border-style: solid; estilo del borde */
+    /* border-color: black; color del borde */
+    border-color: white;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    position: absolute;
+    top: 580px;
+    left: 200px; }
+
+.tienda {
+  display: flex;
+  padding: 100px;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-bottom: 10px; }
+
+.container-accesorios {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 3.125rem; }
+  .container-accesorios button {
+    margin-top: 1rem;
+    /* Espacio superior entre el título y el botón */
+    padding: 0.5rem 1rem;
+    /* Espaciado interno del botón */
+    background-color: #007bff;
+    /* Color de fondo del botón */
+    color: white;
+    /* Color del texto del botón */
+    border: none;
+    /* Elimina el borde por defecto del botón */
+    border-radius: 4px;
+    /* Esquinas redondeadas del botón */
+    cursor: pointer;
+    /* Cambia el cursor al pasar sobre el botón */
+    font-size: 16px;
+    /* Tamaño del texto del botón */
+    z-index: 2;
+    /* Asegura que el botón esté por encima del overlay */ }
+
+.tienda-atributos {
+  height: 600px;
+  margin: 10px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr); }
+
+.elemento-atributos1 {
+  grid-column: 1/3;
+  grid-row: 1;
+  text-align: center; }
+
+.elemento-atributos2 {
+  grid-column: 3/5;
+  grid-row: 1;
+  text-align: center; }
+
+.elemento-atributos3 {
+  grid-column: 2/4;
+  grid-row: 2;
+  text-align: center; }
+
+@media (max-width: 744px) {
+  .responsive-tienda img {
+    width: 100%; }
+  .responsive-tienda .botonTienda {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+    top: 580px;
+    left: 200px; }
+  .responsive-tienda .botonTienda {
+    padding: 5px 10px;
+    /* border-width: 10px; tamaño del borde */
+    /* border-style: solid; estilo del borde */
+    /* border-color: black; color del borde */
+    border-color: white;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    position: absolute;
+    top: 375px;
+    left: 50px; }
+  .tienda {
+    display: flex;
+    max-width: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px; }
+  .container-accesorios {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3.125rem; }
+    .container-accesorios img {
+      max-width: auto;
+      max-height: 100%; }
+    .container-accesorios button {
+      margin-top: 1rem;
+      /* Espacio superior entre el título y el botón */
+      padding: 0.5rem 1rem;
+      /* Espaciado interno del botón */
+      background-color: #007bff;
+      /* Color de fondo del botón */
+      color: white;
+      /* Color del texto del botón */
+      border: none;
+      /* Elimina el borde por defecto del botón */
+      border-radius: 4px;
+      /* Esquinas redondeadas del botón */
+      cursor: pointer;
+      /* Cambia el cursor al pasar sobre el botón */
+      font-size: 16px;
+      /* Tamaño del texto del botón */
+      z-index: 2;
+      /* Asegura que el botón esté por encima del overlay */ }
+  .elemento-atributos1 {
+    grid-column: 1/3;
+    grid-row: 1;
+    text-align: center; }
+  .elemento-atributos2 {
+    grid-column: 3/5;
+    grid-row: 1;
+    text-align: center; }
+  .elemento-atributos3 {
+    grid-column: 2/4;
+    grid-row: 2;
+    text-align: center; } }
+
+.footer {
+  background-image: url(../assets/FOOTER.svg);
+  width: 100%;
+  background-size: cover; }
+
+.caja-footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  padding: 10px;
+  margin: 15px;
+  width: auto; }
+  .caja-footer img {
+    height: 100px; }
+
+.footer-element1 {
+  grid-column: 1;
+  grid-row: 1/2; }
+
+.footer-element1 p {
+  gap: 1.25rem; }
+
+.footer-element2 {
+  grid-column: 2;
+  grid-row: 1/2; }
+
+.footer-element3 {
+  grid-column: 3;
+  grid-row: 1/2; }
+
+.startcoding {
+  background-color: black;
+  display: flex;
+  flex-direction: column; }
+  .startcoding p {
+    color: white;
+    text-align: center; }
+
+/* cuarto los componentes */
+.logo {
+  display: flex;
+  justify-content: center; }
+  .logo img {
+    width: 50px;
+    margin: 5px; }
+  .logo p {
+    padding: 20px 20px;
+    color: white; }
+
+.centro ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.botonTienda {
+  padding: 5px 10px;
+  /* border-width: 10px; tamaño del borde */
+  /* border-style: solid; estilo del borde */
+  /* border-color: black; color del borde */
+  border-color: white;
+  border-radius: 10px;
+  background-color: red;
+  color: white;
+  position: absolute;
+  top: 580px;
+  left: 200px; }
+
+/* y ultimo las media si estamos en desktop a mobile decreciente, y viceversa creciente */
+>>>>>>> main
